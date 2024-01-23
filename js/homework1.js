@@ -15,4 +15,4 @@ console.log(k * m);
 
 let s = 6;
 let l = s ** 6;
-console.log(l)
+console.log(l);
