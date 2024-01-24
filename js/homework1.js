@@ -1,18 +1,15 @@
 "use strict";
 
-let a = 23;
-let b = 29;
-console.log(a + b);
+let a = 5;
+let b = 2;
+let sum = a + b;
+console.log(sum);
 
+let division = a / b;
+console.log(division);
 
-let d = 20;
-let c = 3;
-console.log(d / c);
+let multiplication = a * b;
+console.log(multiplication);
 
-let k = 3;
-let m = 3;
-console.log(k * m);
-
-let s = 6;
-let l = s ** 6;
-console.log(l)
+let exponentiation = a ** 2;
+console.log(exponentiation);
