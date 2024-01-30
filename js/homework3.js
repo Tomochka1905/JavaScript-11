@@ -6,8 +6,8 @@ let value = prompt("Enter value");
 if (isNaN(value)) {
      value= +prompt('Please, enter correct number!');
 }
-for(let evenNumbers = 2; evenNumbers < value;  evenNumbers += 2){
-    console.log(evenNumbers);
+for(let i = 2; i < value; i += 2){
+    console.log(i);
 };
 
 // using while 
@@ -16,23 +16,20 @@ let value = prompt("Enter value");
 if (isNaN(value)) {
      value= +prompt('Please, enter correct number!');
 }
-let evenNumbers = 10; 
-while ( evenNumbers < value){
-    console.log(evenNumbers);
-    evenNumbers += 2;
+let j = 10; 
+while ( j < value){
+    console.log(j);
+    j += 2;
 };
 
 //Task 2
 
-let testNumber = +prompt("Enter a number from 1 to 100");
-console.log(testNumber);
-
 for (let i = 1; i <=100; i ++) {
-    if (testNumber % i === 3) {
+    if ( i % 3  === 0) {
         console.log('Fizz'); 
-    } else if (testNumber % i === 5) {
+    } else if (i % 5 === 0) { 
             console.log('Bizz');
-        } else {(testNumber % i === 5 && testNumber % i === 3) 
+        } else {( i % 5 === 0 &&  i % 3 === 0) 
                 console.log('FizzBizz');
         }
     };
