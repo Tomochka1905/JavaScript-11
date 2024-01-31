@@ -16,7 +16,7 @@ let value = prompt("Enter value");
 if (isNaN(value)) {
      console.log('Error');
 } else {
-let j = 8; 
+let j = 2; 
 while ( j < value){
     console.log(j);
     j += 2;
