@@ -19,7 +19,6 @@ let productOfArray = 1
 for (let number of numbers) {
     productOfArray *= number;
   }
-
 console.log(productOfArray);
 console.log(typeof productOfArray);
 
