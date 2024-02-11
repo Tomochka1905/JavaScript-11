@@ -2,8 +2,8 @@
 "use strict";
 
 const currentMaxValue = 4589;
- let arr = String(currentMaxValue).split('');
-let reverseMaxValue = Number(arr.reverse().join(''));
+let reverseMaxValue = Number(String(currentMaxValue).split('').
+reverse(currentMaxValue).join(''));
 
 console.log(reverseMaxValue); // 9854
 console.log(typeof reverseMaxValue); // 'number'
