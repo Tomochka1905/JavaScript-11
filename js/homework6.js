@@ -43,7 +43,6 @@ function recursiveOddSumTo(number) {
         return recursiveOddSumTo(number - 1);
     }
     
-    
     };
     
     console.log(recursiveOddSumTo(1)) // 1
