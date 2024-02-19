@@ -46,6 +46,6 @@ function recursiveOddSumTo(number) {
     
     };
     
-    console.log(recursiveOddSumTo(0)) // 1
+    console.log(recursiveOddSumTo(1)) // 1
     console.log(recursiveOddSumTo(9)) // 25
     console.log(recursiveOddSumTo(10)) // 25
