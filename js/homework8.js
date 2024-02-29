@@ -14,7 +14,6 @@ numbers.forEach(function(number)
 return sum;
 }
 
-
 //TASK 2
 
 console.log(multiply(5)(5))		// 25
