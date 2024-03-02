@@ -1,10 +1,8 @@
 
 //TASK 1
-
 console.log(addThemAll(2,4)); // 6
 console.log(addThemAll(1,2,3,4)); // 10
 console.log(addThemAll(5,5,10)); // 20
-
 function addThemAll(...numbers) {
 let sum = 0;
 numbers.forEach(function(number)
@@ -13,6 +11,7 @@ numbers.forEach(function(number)
 });
 return sum;
 }
+
 
 //TASK 2
 console.log(multiply(5)(5))		// 25
