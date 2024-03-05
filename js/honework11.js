@@ -17,12 +17,13 @@ detonatorTimer(3);
 //Task 2 
 detonatorTimer(3);
 function detonatorTimer(delay) {
-    if (delay > 0) {
-      console.log(delay);
-      setTimeout(detonatorTimer(delay -1), 1000);
-    } else {
-      console.log('BOOM!');
-    }
+       if (delay > 0) {
+        console.log(delay);
+        delay --;
+        setTimeout(detonatorTimer, 1000, delay);
+       } else if (delay === 0) {
+        console.log('BOOM!');
+       }
 }
 
 //Task 3
