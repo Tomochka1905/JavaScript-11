@@ -1,7 +1,7 @@
 //Task  1 
 function iterativeOddSumTo(number) {
     let sum = 0;
-    for(currentNumber = 1; currentNumber<= number; currentNumber++){
+    for(let currentNumber = 1; currentNumber <= number; currentNumber++){
         if(currentNumber % 2 === 1) {
             sum += currentNumber;
         }
