@@ -1,11 +1,10 @@
 //Task  1 
 function iterativeOddSumTo(number) {
     let sum = 0;
-    for(let currentNumber = 1; currentNumber <= number; currentNumber++){
-        if(currentNumber % 2 === 1) {
+    for(let currentNumber = 1; currentNumber <= number; currentNumber +=2) {
             sum += currentNumber;
         }
-    }
+    
     return sum;
 }
 console.log(iterativeOddSumTo(1)) // 1
