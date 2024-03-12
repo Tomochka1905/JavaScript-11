@@ -3,10 +3,13 @@ console.log(durationBetweenDates('02 Aug 1985', '03 Aug 1985', 'seconds')); // �
 console.log(durationBetweenDates('31 Jan 2022', '03 Feb 2021', 'days')); // поверне '362 days'
 
 function durationBetweenDates(startDate, endDate, unit) {
-  const date1 = new Date(startDate);
-  const date2 = new Date(endDate);
+  const start = new Date(startDate);
+  const end = new Date(endDate);
 
-  let diff = Math.abs(date1 - date2);
+   let result;
+
+
+  let diff = Math.abs(start - end);
    switch (unit) {
     case 'seconds':
         diff = diff/1000;
@@ -23,13 +26,14 @@ function durationBetweenDates(startDate, endDate, unit) {
     default:
         throw new Error ('Invalid input');
    }
-   return diff;
+    return `${diff} ${unit}`;
+
 }
 
 //Task 2 
 const userNames = ['Петро', 'Емма', 'Петро', 'Емма', 'Марта', 'Яна', 'Василь', 'Антон', 'Олена', 'Емма'];
 function filterUnique(array) {
-return [...new Set(userNames)];
+return [...new Set(array)];
 }
 console.log(filterUnique(userNames)); // ['Петро', 'Емма', 'Марта', 'Яна', 'Василь', 'Антон', 'Олена'];
 
